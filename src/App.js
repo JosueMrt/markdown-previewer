@@ -26,7 +26,7 @@ class App extends React.Component {
         </div>
         <div id="preview-container">
           <div id="preview-header" className="box-header"><p>PREVIEW</p></div>
-          <div id="preview" dangerouslySetInnerHTML={{__html:marked(this.state.input)}}></div>
+          <div id="preview" dangerouslySetInnerHTML={{__html:marked(this.state.input, {gfm: true, breaks: true})}}></div>
         </div>
       </div>
      );
