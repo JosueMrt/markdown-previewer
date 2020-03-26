@@ -24,6 +24,10 @@ p {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#preview {
+    padding-left: .75rem;
+}
+
 .box-header {
     height: 25px;
     width: 100%;
@@ -36,4 +40,13 @@ textarea {
     resize: none;
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    #preview-container {
+        width: 90%;
+    }
+    #editor-container {
+        width: 90%;
+    }
 }
